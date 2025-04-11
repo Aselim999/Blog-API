@@ -1,24 +1,14 @@
-# README
+# Blog API Backend Assignment
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Features
+- Ruby on Rails 7.1 API-only app
+- PostgreSQL + Redis
+- JWT authentication
+- Post & comment system
+- Auto-delete posts after 24h using Sidekiq
+- Dockerized for development
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+docker-compose up --build
