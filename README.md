@@ -32,11 +32,12 @@ It provides a secure blogging platform where users can register, log in, create 
 
 ##  Getting Started
 
-### 1. Clone the Repository
 
 ```bash
+1. Clone the Repository
 git clone https://github.com/Aselim999/Blog-API.git
 cd Blog-API
+
 2. Start the Application
 
 docker-compose up --build
