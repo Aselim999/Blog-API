@@ -38,9 +38,7 @@ It provides a secure blogging platform where users can register, log in, create 
 git clone https://github.com/Aselim999/Blog-API.git
 cd Blog-API
 2. Start the Application
-bash
-نسخ
-تحرير
+
 docker-compose up --build
 This will start:
 
@@ -58,37 +56,39 @@ http://localhost:3000/sidekiq
 
 Here you can monitor background jobs like post deletions.
 
- API Endpoints
- Auth
+API Endpoints
+Auth
 Method	Endpoint	Description
 POST	/signup	Create a new user
 POST	/login	Authenticate and return JWT token
 GET	/me	Get current logged-in user info (requires token)
- Posts
+
+Posts
 Method	Endpoint	Description
 GET	/posts	List all posts
 POST	/posts	Create a post (auth)
 GET	/posts/:id	View a specific post
 PUT	/posts/:id	Update post (owner only)
 DELETE	/posts/:id	Delete post (owner only)
- Comments
+
+Comments
 Method	Endpoint	Description
 POST	/posts/:post_id/comments	Add a comment
 PUT	/comments/:id	Update your comment
 DELETE	/comments/:id	Delete your comment
- Authorization
+
+Authorization
 All protected routes require an Authorization header with a valid JWT token:
 
 makefile
-نسخ
-تحرير
+
 Authorization: Bearer <your_token>
 You can get the token by logging in via /login.
 
 Developed by
 Abdalla Mustafa Selim
 GitHub: @Aselim999
-Backend Developer & Tech Problem-Solver 🔧🚀
+Backend Developer & Tech Problem-Solver
 
 Notes
 All posts are scheduled to be deleted 24 hours after creation
